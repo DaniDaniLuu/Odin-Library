@@ -1,0 +1,125 @@
+*{
+    font-family: 'Poppins';
+}
+
+html, body {
+    height:100%;
+    padding:0px;
+    margin:0px;
+    background-color: #f1efef;
+}
+
+.header {
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding:20px 200px;
+    box-shadow: 10px 10px 10px #d3d3d338;
+}
+
+.header > * {
+    font-weight: bold;
+}
+
+.Title {
+    font-size:45px;
+    flex:1;
+}
+
+.logInButton,
+.accountButton {
+    width:90px;
+    height:50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #f1efef;
+}
+
+.accountButton{
+    width: 120px;
+}
+
+.header + div {
+    display:flex;
+    justify-content: center;
+    margin: 35px 0px;
+}
+
+.newBook{
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.cardBox {
+    display:grid;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal{
+    height: 400px;
+    width: 300px;
+    border:none;
+    border-radius: 10px;
+    background-color: #f1efef;
+}
+
+#formFlex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#formTitle{
+    font-weight: 600;
+    font-size: 45px;
+    color:rgb(142, 223, 142);
+    text-align: center;
+}
+
+input[required] {
+    border:none;
+    border-radius: 5px;
+    width: 90%;
+    height: 45px;
+    font-size: 18px;
+}
+
+label[for="readCheckBox"]{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal::backdrop{
+    background-color: rgba(56, 54, 54, 0.479);
+}
+
+.gridItem{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: white;
+    width:300px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gridRemove,
+.gridRead{
+    width: 80%;
+    height: 20%;
+    border:none;
+    border-radius: 10px;
+}

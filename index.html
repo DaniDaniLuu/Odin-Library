@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel ="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@700&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Vollkorn:ital,wght@0,400;0,500;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="header">
+        <div class="Title">Library</div>
+        <button class="accountButton">Account</button>
+        <button class="logInButton">Log In</button>
+    </div>
+
+    <div>
+        <button modal-open class="newBook">+ Add book</button>
+    </div>
+
+    <dialog data-modal class="modal">
+        <form id="formFlex">
+            <div id="formTitle">Book Form</div>
+            <div>
+                <input id="titleInput" type="text" name="bookTitle" placeholder="Title" required>
+            </div>
+            <div>
+                <input id="authorInput" type="text" name="bookAuthor" placeholder="Author" required>
+            </div>
+            <div>
+                <input id="pagesInput" type="number" name="bookPages" placeholder="Pages" min="0" required>
+            </div>
+            <div>
+                <label for="readCheckBox">Has been read?</label>
+                <input type="checkbox" id="readCheckBox" name="bookRead">
+            </div>
+            <button type="reset">Reset</button>
+            <button modal-close type="submit">Submit</button>
+        </form>
+    </dialog>
+
+    <div class = "cardBox">
+    </div>
+</body>
+</html>
