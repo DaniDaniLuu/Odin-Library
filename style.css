@@ -35,7 +35,8 @@ html, body {
     height:50px;
     border-radius: 10px;
     border: none;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     background-color: #f1efef;
 }
 
@@ -122,4 +123,19 @@ label[for="readCheckBox"]{
     height: 20%;
     border:none;
     border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gridRemove:hover{
+    background-color: #c7c7c7;
+}
+
+[has-read]{
+    background-color: lightgreen;
+}
+
+[has-not-read]{
+    background-color: lightcoral;
 }
